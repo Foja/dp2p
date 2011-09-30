@@ -1,0 +1,496 @@
+<<<<<<< .mine
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.27)  3 SEP 2011 13:30
+=======
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.1)  4 SEP 2011 13:08
+>>>>>>> .r265
+entering extended mode
+ %&-line parsing enabled.
+**Main.tex
+(./Main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count87
+\uc@combtoks=\toks16
+\uc@combtoksb=\toks17
+\uc@temptokena=\toks18
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip52
+\subfigcapskip=\skip53
+\subfigcaptopadj=\dimen105
+\subfigbottomskip=\skip54
+\subfigcapmargin=\dimen106
+\subfiglabelskip=\skip55
+\c@subfigure=\count89
+\c@lofdepth=\count90
+\c@subtable=\count91
+\c@lotdepth=\count92
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip56
+\subfig@bottom=\skip57
+) (./Main.aux)
+\openout1 = `Main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+(/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen107
+\scratchbox=\box26
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen108
+\MPnumerator=\count97
+\everyMPtoPDFconversion=\toks21
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 15.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `Main.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (26.5pt): 
+ Make it at least 27.05003pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] [3] [4] (./Introduzione.tex
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+
+<<<<<<< .mine
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+)
+=======
+>>>>>>> .r265
+
+Package Fancyhdr Warning: \headheight is too small (27.05003pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+<<<<<<< .mine
+[3]) [4] (./Architettura.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+\OT1/cmr/m/n/12 tu-ali con sis-tema op-er-a-tivo Fe-dora 8.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+\OT1/cmr/m/n/12 oltre preved-i-bile, sta-bile e gestito pro-fes-sion-al-mente.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+\OT1/cmr/m/n/12 file sys-tem e un suo spazio dei pro-cessi.
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+\OT1/cmr/m/n/12 nodo ^^Re mai stato com-pro-messo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--33
+\OT1/cmr/m/n/12 del con-trollo con-tinuo che viene ef-fet-tuato su di esse.
+ []
+
+) (./Boot.tex
+Underfull \hbox (badness 10000) in paragraph at lines 35--1
+\OT1/cmr/m/n/12 saranno pre-senti an-che delle mac-chine vir-tu-ali di con-trol
+lo.
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+\OT1/cmr/m/n/12 di IP dei su-per-peer a cui con-net-tersi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+[]\OT1/cmr/m/n/12 --descrizione tec-nica di essa--
+ []
+=======
+[5]) [6] (./Architettura.tex) (./Gestione_dinamica.tex [7]
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+)) (./Boot.tex [8]
+<img/join1.pdf, id=34, 597.23125pt x 845.1575pt>
+File: img/join1.pdf Graphic file (type pdf)
+ <use img/join1.pdf>
+<img/join2.pdf, id=36, 597.23125pt x 845.1575pt>
+File: img/join2.pdf Graphic file (type pdf)
+ <use img/join2.pdf> [9 <./img/join1.pdf> <./img/join2.pdf>]
+<img/peer-sp.pdf, id=54, 597.23125pt x 845.1575pt>
+File: img/peer-sp.pdf Graphic file (type pdf)
+ <use img/peer-sp.pdf>
+<img/ping_udp.pdf, id=56, 597.23125pt x 845.1575pt>
+File: img/ping_udp.pdf Graphic file (type pdf)
+ <use img/ping_udp.pdf>
+>>>>>>> .r265
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<<<<<<< .mine
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 peer.
+ []
+=======
+<img/join_udp.pdf, id=58, 597.23125pt x 845.1575pt>
+File: img/join_udp.pdf Graphic file (type pdf)
+ <use img/join_udp.pdf>
+[10] [11 <./img/peer-sp.pdf> <./img/ping_udp.pdf>] [12 <./img/join_udp.pdf>]
+File: img/join1.pdf Graphic file (type pdf)
+>>>>>>> .r265
+
+<use img/join1.pdf>
+File: img/join2.pdf Graphic file (type pdf)
+ <use img/join2.pdf>
+
+<<<<<<< .mine
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+=======
+LaTeX Warning: `h' float specifier changed to `ht'.
+>>>>>>> .r265
+
+) [13] (./Lookup.tex [14] <img/pck_whhs.pdf, id=94, 597.23125pt x 845.1575pt>
+File: img/pck_whhs.pdf Graphic file (type pdf)
+
+<use img/pck_whhs.pdf> [15 <./img/pck_whhs.pdf>]) [16] (./Download.tex [17])
+[18] (./Conclusioni.tex [19]) [20] (./Main.lof)
+\tf@lof=\write4
+\openout4 = `Main.lof'.
+
+<<<<<<< .mine
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 con-net-tersi ad uno di essi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 join[]UDP.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 avanti le mo-ti-vazioni di tale scelta).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 che ef-fet-tua la join-udp ad uno di essi--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 --grafo di flusso e de-scrizione tec-nica della join[]udp--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 dura di elezione[]nuovo[]SP().
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 tempo su-per-peer.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 peer--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+\OT1/cmr/m/n/12 --grafo di flusso e de-scrizione tec-nica della join[]udp--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--22
+
+ []
+
+[7]) (./Lookup.tex [8]
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 nodi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 net come ap-pli-cazioni di rete o per servizi di lunga du-rata.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 alle sim-u-lazioni.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 com-putazion-ali e di rete, che essa imp-iega per ogni nodo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 es-sere provati paradigmi della pro-gram-mazione dis-tribuita.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+
+ []
+
+[9]) [10] (./Download.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 nodi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 net come ap-pli-cazioni di rete o per servizi di lunga du-rata.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 alle sim-u-lazioni.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 com-putazion-ali e di rete, che essa imp-iega per ogni nodo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 es-sere provati paradigmi della pro-gram-mazione dis-tribuita.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+
+ []
+
+[11]) [12] (./Conclusioni.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 nodi.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 net come ap-pli-cazioni di rete o per servizi di lunga du-rata.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 alle sim-u-lazioni.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 com-putazion-ali e di rete, che essa imp-iega per ogni nodo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+\OT1/cmr/m/n/12 es-sere provati paradigmi della pro-gram-mazione dis-tribuita.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--24
+
+ []
+
+[13]) [14] (./Main.aux) ) 
+=======
+ [21] (./Main.aux) ) 
+>>>>>>> .r265
+Here is how much of TeX's memory you used:
+<<<<<<< .mine
+ 2249 strings out of 495061
+ 28379 string characters out of 1182621
+ 82850 words of memory out of 3000000
+ 5418 multiletter control sequences out of 15000+50000
+ 9160 words of font info for 32 fonts, out of 3000000 for 9000
+=======
+ 2301 strings out of 493848
+ 29128 string characters out of 1152824
+ 87902 words of memory out of 3000000
+ 5553 multiletter control sequences out of 15000+50000
+ 10115 words of font info for 35 fonts, out of 3000000 for 9000
+>>>>>>> .r265
+<<<<<<< .mine
+ 28 hyphenation exceptions out of 8191
+ 29i,10n,43p,550b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Main.pdf (14 pages, 88843 bytes).
+=======
+ 714 hyphenation exceptions out of 8191
+ 29i,10n,43p,805b,553s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb>
+Output written on Main.pdf (21 pages, 188460 bytes).
+>>>>>>> .r265
+PDF statistics:
+<<<<<<< .mine
+ 68 PDF objects out of 1000 (max. 8388607)
+=======
+ 150 PDF objects out of 1000 (max. 8388607)
+>>>>>>> .r265
+ 0 named destinations out of 1000 (max. 500000)
+<<<<<<< .mine
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> .r265
+

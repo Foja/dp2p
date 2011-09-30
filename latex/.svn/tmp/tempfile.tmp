@@ -1,0 +1,54 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduzione}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Storia}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Cosa non \IeC {\`e} PlanetLab}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Descrizione PlanetLab}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}Per cosa \IeC {\`e} usato?}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Architettura}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Peer}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Bloom Filter}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Protocolli di comunicazione}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Gestione della concorrenzialit\IeC {\`a} nel peer}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Gestione dinamica dei superpeer}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Fase di boot}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Peer}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Join al server di bootstrap}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Join del peer al server di bootstrap}}{9}}
+\newlabel{join}{{1}{9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Lista non vuota}}}{9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Lista vuota}}}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Join udp al superpeer}{10}}
+\newlabel{sel_sp}{{2(a)}{11}}
+\newlabel{sub@sel_sp}{{(a)}{11}}
+\newlabel{ping_udp}{{2(b)}{11}}
+\newlabel{sub@ping_udp}{{(b)}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Fase di boot del peer}}{11}}
+\newlabel{bootpeer}{{2}{11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Ping del peer ai superpeer e successiva join\_UDP al superpeer scelto }}}{11}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Ping del peer al superpeer}}}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Join del peer al superpeer}}{12}}
+\newlabel{join_udp}{{3}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Superpeer}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Register del superpeer al server di bootstrap}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Entrata del superpeer nella rete d'overlay}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Join del peer al server di bootstrap}}{14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Lista non vuota}}}{14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Lista vuota}}}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Fase di lookup}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Introduzione}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Controllo della ricerca}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Ricerca}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces struttura pacchetto per la whohas}}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.1}Richiesta da parte del peer al superpeer}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Ricerca dei possessori del file da parte del superpeer}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Fine ricerca}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Introduzione}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Storia}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Cosa non \IeC {\`e} PlanetLab}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Descrizione PlanetLab}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Per cosa \IeC {\`e} usato?}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Introduzione}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Storia}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Cosa non \IeC {\`e} PlanetLab}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Descrizione PlanetLab}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}Per cosa \IeC {\`e} usato?}{20}}

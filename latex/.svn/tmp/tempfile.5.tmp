@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}Introduzione}{5}
+\contentsline {subsection}{\numberline {1.1}Storia}{5}
+\contentsline {subsection}{\numberline {1.2}Cosa non \IeC {\`e} PlanetLab}{5}
+\contentsline {subsection}{\numberline {1.3}Descrizione PlanetLab}{5}
+\contentsline {subsubsection}{\numberline {1.3.1}Per cosa \IeC {\`e} usato?}{6}
+\contentsline {section}{\numberline {2}Architettura}{7}
+\contentsline {subsection}{\numberline {2.1}Peer}{7}
+\contentsline {subsubsection}{\numberline {2.1.1}Bloom Filter}{7}
+\contentsline {subsubsection}{\numberline {2.1.2}Protocolli di comunicazione}{7}
+\contentsline {subsubsection}{\numberline {2.1.3}Gestione della concorrenzialit\IeC {\`a} nel peer}{7}
+\contentsline {section}{\numberline {3}Gestione dinamica dei superpeer}{8}
+\contentsline {section}{\numberline {4}Fase di boot}{9}
+\contentsline {subsection}{\numberline {4.1}Peer}{9}
+\contentsline {subsubsection}{\numberline {4.1.1}Join al server di bootstrap}{9}
+\contentsline {subsubsection}{\numberline {4.1.2}Join udp al superpeer}{10}
+\contentsline {subsection}{\numberline {4.2}Superpeer}{13}
+\contentsline {subsubsection}{\numberline {4.2.1}Register del superpeer al server di bootstrap}{13}
+\contentsline {subsubsection}{\numberline {4.2.2}Entrata del superpeer nella rete d'overlay}{13}
+\contentsline {section}{\numberline {5}Fase di lookup}{14}
+\contentsline {subsection}{\numberline {5.1}Introduzione}{14}
+\contentsline {subsection}{\numberline {5.2}Controllo della ricerca}{14}
+\contentsline {subsection}{\numberline {5.3}Ricerca}{15}
+\contentsline {subsubsection}{\numberline {5.3.1}Richiesta da parte del peer al superpeer}{16}
+\contentsline {subsubsection}{\numberline {5.3.2}Ricerca dei possessori del file da parte del superpeer}{16}
+\contentsline {subsubsection}{\numberline {5.3.3}Fine ricerca}{16}
+\contentsline {section}{\numberline {6}Introduzione}{17}
+\contentsline {subsection}{\numberline {6.1}Storia}{17}
+\contentsline {subsection}{\numberline {6.2}Cosa non \IeC {\`e} PlanetLab}{17}
+\contentsline {subsection}{\numberline {6.3}Descrizione PlanetLab}{17}
+\contentsline {subsubsection}{\numberline {6.3.1}Per cosa \IeC {\`e} usato?}{18}
+\contentsline {section}{\numberline {7}Introduzione}{19}
+\contentsline {subsection}{\numberline {7.1}Storia}{19}
+\contentsline {subsection}{\numberline {7.2}Cosa non \IeC {\`e} PlanetLab}{19}
+\contentsline {subsection}{\numberline {7.3}Descrizione PlanetLab}{19}
+\contentsline {subsubsection}{\numberline {7.3.1}Per cosa \IeC {\`e} usato?}{20}

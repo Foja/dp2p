@@ -1,0 +1,37 @@
+[...]
+
+PEER:	
+ricevuto nwsp da: 160.80.148.15
+comando ricevuto=nwsp
+size=1
+
+SUPERPEER:
+register=1
+
+ENTRATO IN ISSET UDP
+comando ricevuto=join
+size=108
+ricevuto filtro
+RATING:0.686023
+
+STAMPA LISTA PEER
+elem [0] IP= 160.80.148.15, RAT= 0.686023
+result inviato
+
+
+ENTRATO IN ISSET UDP
+comando ricevuto=join
+size=108
+ricevuto filtro
+RATING:1.493180
+
+STAMPA LISTA PEER
+elem [0] IP= 160.80.146.107, RAT= 1.493180
+elem [1] IP= 160.80.148.15, RAT= 0.686023
+
+result inviato
+
+comando ricevuto=ack
+size=0
+cont=5 RESULT=> ack
+

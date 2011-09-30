@@ -1,0 +1,20 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Struttura select del server}}{6}
+\contentsline {figure}{\numberline {2}{\ignorespaces Select del superpeer}}{8}
+\contentsline {figure}{\numberline {3}{\ignorespaces Architettura del peer}}{11}
+\contentsline {figure}{\numberline {4}{\ignorespaces Struttura filtri di bloom}}{14}
+\contentsline {figure}{\numberline {5}{\ignorespaces elezione di un peer a superpeer}}{18}
+\contentsline {figure}{\numberline {6}{\ignorespaces Switch del superpeer con un suo peer con rating migliore almeno del 20 \% }}{20}
+\contentsline {figure}{\numberline {7}{\ignorespaces merge tra due superpeer}}{21}
+\contentsline {figure}{\numberline {8}{\ignorespaces Join del peer al server di bootstrap}}{22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lista non vuota}}}{22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lista vuota}}}{22}
+\contentsline {figure}{\numberline {9}{\ignorespaces Fase di boot del peer}}{23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Ping del peer ai superpeer e successiva join\_UDP al superpeer scelto }}}{23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Ping del peer al superpeer}}}{23}
+\contentsline {figure}{\numberline {10}{\ignorespaces Join del peer al superpeer}}{25}
+\contentsline {figure}{\numberline {11}{\ignorespaces Join del peer a un superpeer non raggiungibile, gestione timeout}}{26}
+\contentsline {figure}{\numberline {12}{\ignorespaces struttura pacchetto per la whohas}}{28}
+\contentsline {figure}{\numberline {13}{\ignorespaces Scambio di messaggi tra peer e superpeer durante una ricerca}}{30}
+\contentsline {figure}{\numberline {14}{\ignorespaces Propagazione della whohas sull'overlay}}{33}
+\contentsline {figure}{\numberline {15}{\ignorespaces Esecuzione del download tra due peer}}{37}
+\contentsline {figure}{\numberline {16}{\ignorespaces Probabilit\IeC {\`a} di falsi positivi al variare del numero degli elementi condivisi}}{45}

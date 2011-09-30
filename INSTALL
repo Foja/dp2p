@@ -1,0 +1,28 @@
+-----------INSTALLAZIONE RETE DP2P-----------
+
+Il software non richiede l'installazione di particolari librerie per essere
+eseguito. L'unica particolarità è l'utilizzo l'API del socket di Berkeley,
+come è stato segnalato nelle specifiche del progetto.
+
+NOTA: ogni comando deve essere digitato da terminale
+
+COMPILAZIONE
+
+Per compilare i files sorgenti è sufficiente spostarsi nella directory principale
+che contiene il progetto, chiamata "dp2p", e digitare il comando:
+
+$ sh compile.sh
+
+ESECUZIONE
+
+E' possibile eseguire il server di bootstrap digitando dalla directory del file 
+sorgente (chiamata "BOOTSTRAP") il comando:
+
+$ ./server
+
+Per quanto riguarda l'esecuzione del peer, anche qui è necessario recarsi nella
+cartella chiamata "PEER", scrivendo:
+
+$ ./peer <indirizzo IP server>
+
+

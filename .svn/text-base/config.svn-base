@@ -1,0 +1,12 @@
+//per il peer
+#PATH_FILEBLOOM: ./bloom/filebloom; //dove salvare il file bloom di riferimento
+#PATH_DIR: ./bloom/file; //dove salvare la lista dei file
+#PATH_LOCALE: ./cartella_condivisa/; //cartella condivisa
+#CHUNK: 512;
+//per il superpeer
+#MAXPEER: 50; 
+#MAXSUPERPEER: 100;
+#NUM_UPLOAD: 5;
+
+#BOOT_PORT_UDP: 5001;
+#BOOT_PORT_TCP: 5000;

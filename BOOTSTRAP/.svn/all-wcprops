@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/315/trunk/BOOTSTRAP
+END
+server.c
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/315/trunk/BOOTSTRAP/server.c
+END
+superpeer.txt
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/25/trunk/BOOTSTRAP/superpeer.txt
+END
+funz_server.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/315/trunk/BOOTSTRAP/funz_server.c
+END
+superpeer2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/20/trunk/BOOTSTRAP/superpeer2.txt
+END
+superpeer3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/64/trunk/BOOTSTRAP/superpeer3.txt
+END
+server.h
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/315/trunk/BOOTSTRAP/server.h
+END

@@ -1,0 +1,41 @@
+\section{Introduzione}
+\subsection{DP2P}
+Lo scopo del progetto è quello di realizzare un'architettura P2P ibrida per la condivisione di file con directory distribuita.
+Un sistema peer-to-peer è un sistema distribuito in cui ogni nodo ha identiche capacità e responsabilità e le funzionalità di un peer sono totalmente indipendenti da un server.
+\subsection{Specifiche}
+La struttura P2P ha principalmente le seguenti caratteristiche:
+\begin{itemize}
+\item controllo decentralizzato;
+\item adattabilità;
+\item capacità autonome di gestione e controllo di risorse e servizi;
+\end{itemize}
+Il sistema P2P viene definito ibrido quando:
+\begin{itemize}
+\item la fase di scambio dei file è peer-to-peer;
+\item la fase di boot utilizza qualche server;
+\item la fase di ricerca dei file usa un peer particolare, chiamato superpeer;
+\end{itemize}
+L'architettura è perciò organizzata in questo modo:
+\begin{itemize}
+\item ogni peer è associato ad un superpeer;
+\item i superpeer tengono traccia dei file condivisi dai peer ad esso associati e sono collegati tra loro tramite una rete  “overlay”; 
+\item il server centralizzato di bootstrap tiene traccia dei superpeer presenti.
+\end{itemize}
+\subsection{Obiettivi}
+Il software realizzato permette:
+\begin{itemize}
+\item l'ingresso e l'uscita di un nodo peer nella rete;
+\item la registrazione e l'uscita dei superpeer e la gestione della rete di overlay;
+\item la visualizzazione sul peer della lista dei file locali condivisi;
+\item la ricerca di un determinato file posseduto da un altro nodo della rete, tramite interrogazione del superpeer;
+\item il download di un file da un peer.
+\end{itemize}
+\subsection{Esecuzione}
+L'esecuzione di un sistema P2P consiste solitamente di tre fasi distinte:
+\begin{enumerate}
+\item FASE DI BOOT: inizializzazione del sistema, entrata e registrazione di ogni nodo nella rete;
+\item FASE DI LOOKUP: ricerca di un file,interazione peer-superpeer e successivo inoltro della richiesta nella rete di overlay;
+\item FASE DI DOWNLOAD: trasferimento del file richiesto. 
+\end{enumerate}
+
+

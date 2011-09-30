@@ -1,0 +1,322 @@
+#include "peer.h"
+
+#define PATH "./bloom/file" //dove salvare la lista dei file
+#define N_CHECK 3 //numero di prove da fare sul filtro
+#define PATH_LOCALE "./cartella_condivisa/" //cartella da scandire
+
+struct in_addr IPSP; //riferimento all'ip del superpeer
+
+void alarm_handlerping()
+{
+	alarm(0);
+	printf("%d ==> ping del peer al superpeer associato\n%d ==> risultato del ping=%d\n", getpid(), getpid(), ping_UDP(IPSP, 1) );
+
+	//reimposto la sigaction			
+	struct sigaction alarmactionping = { .sa_handler = alarm_handlerping };
+	int retcodeping = sigaction(SIGALRM, &alarmactionping, NULL);
+  if (retcodeping == -1) {
+		//controllo della giusta esecuzione della sigaction
+  	perror("bad sigaction()\n");
+		return ;
+  }
+	alarm(45);
+}
+
+int main(int argc, char **argv)
+{
+	ratC = ratingC(); //restituisce rating del computer (un numero da 0 a 2)
+	ratT = 0 ; //rating del tempo inizialmente a 0
+
+	rating= ratC + ratT;
+  int	sockfd;
+  struct sockaddr_in	servaddr;
+  list.next=&list;
+  list.prev=&list;
+    
+  if (argc != 2) 
+  {
+     fprintf(stderr, "%d ==> utilizzo: echo_client <indirizzo IP server>\n", getpid() );
+     exit(1);
+  }    
+
+  if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+  {
+     perror("errore in socket");
+     exit(1);
+  }
+
+	/* JOIN AL SERVER DI BOOTSTRAP */
+  memset((void *)&servaddr, 0, sizeof(servaddr));
+
+  servaddr.sin_family = AF_INET;
+  servaddr.sin_port = htons(SERV_TCP_PORT); 
+
+  if (inet_pton(AF_INET, argv[1], &servaddr.sin_addr) <= 0) 
+  {
+     fprintf(stderr, "errore in inet_pton per %s", argv[1]);
+     exit(1);
+  }
+    
+  if ( connect (sockfd, (struct sockaddr *) &servaddr, sizeof(servaddr)) < 0 ) 
+  {
+     perror("errore in connect");
+     exit(1);
+  }    
+  //printf("sockfd:%d\n",sockfd);
+	
+  str_cli_echo( sockfd, inet_ntoa(servaddr.sin_addr) );	/* svolge il lavoro del peer */   
+  return 1;
+}
+
+
+/* funzione che svolge il lavoro del peer e opzionalmente del SP*/
+void str_cli_echo( int sockd, char *IP )
+{
+  int pid;
+  char comando[10];
+  int	n,sp;
+  struct in_addr my_ip;
+  sp=join(sockd, &my_ip); //join del peer al bootstrap
+   
+	//se il peer che si sta connettendo è stato eletto superpeer faccio partire il codice relativo
+  if (sp == 1)
+  {
+	  if ((pid = fork() ) == 0) 
+    Super_Peer(IP);
+  }
+
+  sleep(1);
+  Peer(sp, my_ip);
+}
+
+/*********** PEER-SUPERPEER****************/
+
+void Peer(int sp,  struct in_addr my_ip)
+{
+	int x;
+	
+	unlink (PATH);
+	open_dir ( PATH_LOCALE, PATH, 0 ); //scandisco la cartella PATH_LOCALE e salvo i risultati in PATH	
+	BLOOM *bloom = create_bloom_file(PATH); //a partire dal file in PATH creo il filtro di bloom
+ 	bloom_destroy(bloom);
+  struct in_addr ip;
+	struct list_head *ptr_list;
+
+  ptr_list = &list;
+	int join=0; //a 0 finchè non riesce un join
+
+	int dim=Listlen(&list); //dimensione lista
+	printf("%d ==> dimensione lista SP ricevuta= %d\n", getpid(), dim );
+	struct in_addr array_ip[dim]; //creo array di ip di dimensione della lista
+	float ping[dim]; //conterrà il valore dei ping dei SP pingati
+	int j=0; //contatore
+  int k=0;
+	//scorro la lista e salvo i vari ip nell'array	
+  while ( (ptr_list->next != &list) && (join == 0) )
+  {
+  	ptr_list = ptr_list->next;
+		ip=ptr_list->IP.sin_addr;
+		array_ip[j]=ip;
+		j++;
+	}
+
+	printf("%d\n",sp);
+  if (sp != 1)
+  {
+	  struct timeb start,end;
+	  float elapsed;
+	  //faccio il ping di tutti i superpeer
+	  for (j=0 ; j<dim ; j++)
+	  {
+		  ftime(&start);
+		  printf("%d ==> ping a %s : %d\n", getpid(), inet_ntoa(array_ip[j]), ping_UDP(array_ip[j],1));
+		  ftime(&end);
+		  elapsed = (end.millitm-start.millitm)*1.0e-3 + (end.time-start.time);	
+		  ping[j] = elapsed;
+	  }
+
+	  //ordino l'array in ordine crescente
+	  for( j=0 ; j<dim-1 ; j++ )
+	  {
+		  for ( k=j+1 ; k<dim ; k++ )
+		  {
+         if( ping[j] > ping[k] )
+				 {
+		       struct in_addr app_ip;
+		       float app_ping;
+		       //scambio
+		       app_ping=ping[j];
+		       ping[j]=ping[k];
+		       ping[k]=app_ping;
+					 app_ip=array_ip[j];
+					 array_ip[j]=array_ip[k];
+					 array_ip[k]=app_ip;
+				}		
+			}
+		}
+	
+		// una volta ordinato provo a fare la join in ordine finche non va a buon fine
+		for( j=0 ; j < dim && join == 0 ; j++ )
+		{
+			ip=array_ip[j];
+			if(ping[j]!=5) join=join_UDP( array_ip[j], rating , 5 ); //se ping[j]==0 vuol dire che era scaduto il timeout quindi non provo neanche la connessione
+			printf("%d ==> join a %s : %d\n", getpid(), inet_ntoa(array_ip[j]), join);
+		}
+		IPSP=ip;
+  }
+
+  else
+  {
+    printf("%d ==> JOIN MY IP\n\n", getpid() );
+    join=join_UDP( my_ip, rating, 5 );
+		IPSP=my_ip;
+  }
+	
+  if (join == 1)
+  {
+		if (sp == 1) 
+      ip=my_ip;
+	
+		printf("join effettuato a %s\n",inet_ntoa(ip));
+    struct sigaction alarmactionping = {.sa_handler = alarm_handlerping};
+		int retcodeping = sigaction(SIGALRM, &alarmactionping, NULL);
+ 		if (retcodeping == -1) 
+		{
+			//controllo della giusta esecuzione della sigaction
+  		perror("bad sigaction()\n");
+			return;
+  	}
+		alarm(45);
+ 
+// inizio codice select
+
+  fd_set	rset,allset;
+	int maxd;
+	int ready;
+	int x;
+	char* s=malloc(255);
+	char* search=malloc(255);
+	char 	buffer;
+
+	FD_ZERO (&allset);
+	FD_SET	(fileno(stdin), &allset);
+	maxd = fileno(stdin);
+		
+
+	for( ; ; )
+	{
+
+		printf("%d ==> #COMANDI\n" , getpid());
+		printf("1:leave\n");
+		printf("2:list\n");
+		printf("3:whohas\n");
+		printf("=>inserire il numero della scelta:\n");
+
+		rset = allset;
+		ready=0;
+		if ( ((ready = select(maxd+1, &rset, NULL, NULL, NULL)) < 0) && (errno == EINTR))
+         continue;
+
+     if ((ready < 0) && (errno != EINTR))
+     {
+        perror("errore in select");
+        exit(1);
+     }
+
+     //printf("ready:%d\n",ready);
+
+
+		if( FD_ISSET( fileno(stdin),&rset) )
+		{
+      for( ; ; )
+      {
+	  		if((fgets(s,255,stdin) == EOF) && (errno == EINTR))
+          continue;
+
+        else 
+          break;
+      }
+
+			x = atoi(s);
+			
+			if	( x == 1)
+			{	
+				printf("%d ==> leave : %d\n", getpid(), leave_UDP(ip,5) );
+				alarm(0);
+				return;
+			}
+			
+			if ( x == 2 ) //stampa lista dei file locali
+			{
+
+				FILE* fd;
+				
+				for( ; ; )
+				{				
+				  if( ((fd=fopen(PATH,"r" )) == NULL) && (errno==EINTR) ) 
+            continue;
+
+					else 
+            break; 	
+				}
+				while(fread(&buffer,1,1,fd)>0)
+        {
+					printf("%c", buffer);
+				}
+			}
+				
+			if ( x == 3 )
+			{
+				printf("quale file si vuole cercare?\n");
+
+     		for( ; ; )
+      	{
+					if ((fgets(search,255,stdin) == NULL) && (errno == EINTR)) 
+            continue;
+ 
+	 				else 
+            break;
+	    	}
+	
+				alarm(0); //azzeramento alarm per evitare problemi tra gli alarm
+				printf("%d ==> whohas di %s : %d\n", getpid(), search, whohas_UDP(IPSP,search,5) );
+				//reimposto la sigaction
+		    			
+				struct sigaction alarmactionping = { .sa_handler = alarm_handlerping };
+				retcodeping = sigaction(SIGALRM, &alarmactionping, NULL);
+				if (retcodeping == -1) {
+					//controllo della giusta esecuzione della sigaction
+					perror("bad sigaction()\n");
+					return ;
+				}
+				alarm(45);
+			}
+			//printf("ricevuto ==>%s\n",s);
+			if (--ready <= 0) /* Cicla finchè ci sono ancora descrittori leggibili da controllare */
+			  continue;
+		}
+  }
+
+
+
+//fine codice select
+		
+  }
+	else
+	{
+		printf("%d ==> connessione rifiutata\n", getpid() );	
+		printf("rifare il join al bootstrap\n");
+	}
+
+  
+
+	printf ("fine codice del peer\n");
+  return;
+}
+
+void Super_Peer(char *IP)
+{
+char *arglist1[3] = {"./superpeer", IP, NULL};
+execve(arglist1[0], arglist1, NULL);
+}
+

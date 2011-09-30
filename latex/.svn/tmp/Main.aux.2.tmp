@@ -1,0 +1,85 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduzione}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}DP2P}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Specifiche}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Obiettivi}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Esecuzione}{5}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Architettura}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Server di Bootstrap}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Struttura select del server}}{6}}
+\newlabel{select_server}{{1}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Superpeer}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Struttura select superpeer}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Select del superpeer}}{8}}
+\newlabel{select_superpeer}{{2}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Protocolli di comunicazione}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Peer}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Processo principale del peer}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Architettura del peer}}{11}}
+\newlabel{arc_peer}{{3}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Processo di upload}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Processo di controllo}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}Bloom Filter}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Struttura filtri di bloom}}{14}}
+\newlabel{bloom_filter}{{4}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.5}Protocolli di comunicazione}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Gestione dinamica peer/superpeer}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Connessione ad un superpeer}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Elezione di un nuovo superpeer}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Leave del superpeer}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Switch tra peer e superpeer}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces elezione di un peer a superpeer}}{18}}
+\newlabel{elezione}{{5}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Switch del superpeer con un suo peer con rating migliore almeno del 20 \% }}{19}}
+\newlabel{switch}{{6}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Unione di due superpeer}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces merge tra due superpeer}}{20}}
+\newlabel{merge}{{7}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Fase di boot}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Peer}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Join al server di bootstrap}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Join del peer al server di bootstrap}}{21}}
+\newlabel{join}{{8}{21}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Lista non vuota}}}{21}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Lista vuota}}}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Join udp al superpeer}{22}}
+\newlabel{sel_sp}{{9(a)}{23}}
+\newlabel{sub@sel_sp}{{(a)}{23}}
+\newlabel{ping_udp}{{9(b)}{23}}
+\newlabel{sub@ping_udp}{{(b)}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Fase di boot del peer}}{23}}
+\newlabel{bootpeer}{{9}{23}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Ping del peer ai superpeer e successiva join\_UDP al superpeer scelto }}}{23}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Ping del peer al superpeer}}}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Join del peer al superpeer}}{24}}
+\newlabel{join_udp}{{10}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Join del peer a un superpeer non raggiungibile, gestione timeout}}{25}}
+\newlabel{join_timeout}{{11}{25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Superpeer}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Register del superpeer al server di bootstrap}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Entrata del superpeer nella rete d'overlay}{26}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Fase di lookup}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Introduzione}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ricerca}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces struttura pacchetto per la whohas}}{28}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Richiesta da parte del peer al superpeer}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Scambio di messaggi tra peer e superpeer durante una ricerca}}{30}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Ricerca dei peer possessori del file da parte del superpeer}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Propagazione della whohas sull'overlay}}{33}}
+\newlabel{whhs_overlay}{{14}{33}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3}Fine ricerca}{34}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Fase di Download}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Descrizione}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Struttura}{35}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Esempio di esecuzione}{36}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Esecuzione del download tra due peer}}{37}}
+\newlabel{download_img}{{15}{37}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Esempi di funzionamento e limitazioni riscontrate}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Test download}{37}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}output del test}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Test switch peer-superpeer}{40}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}output del test}{40}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Test ricerca}{42}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.1}output del test}{42}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.3.2}commento}{43}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Limitazioni riscontrate}{43}}

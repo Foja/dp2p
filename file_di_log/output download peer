@@ -1,0 +1,72 @@
+rating ram = 0.735992
+rating cpu = 0.756667
+CODICE PEER
+
+JOIN (5) IP=160.80.146.107
+comando ricevuto=ack
+size=0
+cont=5 RESULT=> ack
+join effettuato a 160.80.146.107
+----------------------------------
+
+#COMANDI
+1: LEAVE
+2: UPDATE
+3: WHOHAS
+=>inserire il numero della scelta:
+----------------------------------
+3
+
+quale file si vuole cercare?
+roxanne.mp3
+
+WHOHAS:roxanne.mp3 - cont=5
+comando ricevuto=ack
+size=4
+ID=0
+dati=�P�
+numero di ip 1
+LISTA IP RESTITUITI
+0 = 160.80.148.15
+
+cont=5 RESULT OF THE OPERATION=> ack
+esito della whohas di 'roxanne.mp3'  : 1
+----------------------------------
+#COMANDI
+2: UPDATE
+4: STOP (della ricerca)
+=>inserire il numero della scelta:
+----------------------------------
+4
+
+STOP (5)
+comando ricevuto=ack
+size=0
+cont=5 RESULT=> ack
+FINE RICERCA , ip trovati: 1
+STAMPA LISTA
+ELEM[0] IP= 160.80.148.15
+digitare 1 se si vuole scaricare il file
+1
+
+AVVIO DEL DOWNLOAD DI roxanne.mp3 dal peer 160.80.148.15
+
+INIZIO DOWNLOAD
+nome file : roxanne.mp3
+dimensione file: 4613617 
+numero chunk file: 9010 
+invio ack riuscito
+-----------------
+posizione in cui verrà salvato il file : Scaricati/roxanne.mp3
+store
+numero chunk già ricevuti di questo file: 0
+file incompleto
+**********
+DOWNLOAD IN CORSO
+**********
+fine lettura da socket
+transazione completata, file ricevuto senza errori
+result inviato: ack
+
+FINE DOWNLOAD
+TEMPO IMPIEGATO PER IL DOWNLOAD = 12.035000

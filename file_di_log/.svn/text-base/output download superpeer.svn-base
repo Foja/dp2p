@@ -1,0 +1,31 @@
+comando ricevuto=join
+size=108
+ricevuto filtro
+RATING:1.492659
+STAMPA LISTA PEER
+elem [0] ==> IP= 160.80.146.107, RAT= 1.492659
+
+...
+
+aggiornato TTL dell'IP 160.80.146.107 
+comando ricevuto=whhs
+size=11
+ID=0
+dati=roxanne.mp3
+INIZIO CODICE WHOHAS
+inserita la query
+ricerca di : roxanne.mp3
+lunghezza nome file:11
+numero di peer connessi : 2
+match del file roxanne.mp3 nel peer 160.80.148.15
+IP trovati 1
+ip 0 = 160.80.148.15 
+
+result inviato
+
+aggiornato TTL dell'IP 160.80.146.107 
+comando ricevuto=stop
+size=0
+QUERY CANCELLATA DALLA LISTA
+result inviato
+...

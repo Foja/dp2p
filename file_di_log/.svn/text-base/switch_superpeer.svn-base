@@ -1,0 +1,13 @@
+
+ENTRATO IN ISSET UDP
+aggiornato TTL dell'IP 160.80.146.107 
+comando ricevuto=ping
+size=8
+aggiornato rating (1.493180) dell'IP 160.80.146.107 
+
+INIZIO OPERAZIONE SWITCH
+inviato messaggio di pong al peer
+inviato leave al bootstrap
+invio messaggio di leave dal SP a 160.80.148.15
+FINE SUPERPEER
+

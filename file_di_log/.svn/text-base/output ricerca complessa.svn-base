@@ -1,0 +1,45 @@
+ENTRATO IN ISSET UDP
+aggiornato TTL dell'IP 160.80.146.107 
+comando ricevuto=whhs
+size=7
+ID=0
+dati=gdl.pdf
+
+INIZIO CODICE WHOHAS
+inserita la query
+inoltro sulla rete di overlay
+ricerca di : gdl.pdf
+lunghezza nome file:7
+numero di peer connessi : 1
+IP trovati 0
+result inviato
+
+[...]
+
+NUMERO SUPERPEER CONNESSI : 1
+ENTRATO IN ISSET TCP
+comando ricevuto=ack
+size=5
+ID=1
+dati=;�P�E
+aggiungere nella try list: 160.80.128.69
+INOLTRO WHOHAS
+FINE ISSET TCP
+
+[...]
+
+ENTRATO IN ISSET UDP
+comando ricevuto=ack
+size= 9
+ID= 1
+dati= �P�E;�P�
+
+[...]
+
+ENTRATO IN ISSET UDP
+aggiornato TTL dell'IP 160.80.146.107 
+comando ricevuto=stop
+size=0
+QUERY CANCELLATA DALLA LISTA
+result inviato
+

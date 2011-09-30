@@ -1,0 +1,50 @@
+\contentsline {section}{\numberline {1}Introduzione}{4}
+\contentsline {subsection}{\numberline {1.1}DP2P}{4}
+\contentsline {subsection}{\numberline {1.2}Specifiche}{4}
+\contentsline {subsection}{\numberline {1.3}Obiettivi}{4}
+\contentsline {subsection}{\numberline {1.4}Esecuzione}{5}
+\contentsline {section}{\numberline {2}Architettura}{6}
+\contentsline {subsection}{\numberline {2.1}Server di Bootstrap}{6}
+\contentsline {subsection}{\numberline {2.2}Superpeer}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Struttura select superpeer}{7}
+\contentsline {subsubsection}{\numberline {2.2.2}Protocolli di comunicazione}{9}
+\contentsline {subsection}{\numberline {2.3}Peer}{10}
+\contentsline {subsubsection}{\numberline {2.3.1}Processo principale del peer}{10}
+\contentsline {subsubsection}{\numberline {2.3.2}Processo di upload}{12}
+\contentsline {subsubsection}{\numberline {2.3.3}Processo di controllo}{12}
+\contentsline {subsubsection}{\numberline {2.3.4}Bloom Filter}{13}
+\contentsline {subsubsection}{\numberline {2.3.5}Protocolli di comunicazione}{14}
+\contentsline {section}{\numberline {3}Gestione dinamica peer/superpeer}{16}
+\contentsline {subsection}{\numberline {3.1}Connessione ad un superpeer}{16}
+\contentsline {subsection}{\numberline {3.2}Elezione di un nuovo superpeer}{17}
+\contentsline {subsection}{\numberline {3.3}Leave del superpeer}{17}
+\contentsline {subsection}{\numberline {3.4}Switch tra peer e superpeer}{19}
+\contentsline {subsection}{\numberline {3.5}Unione di due superpeer}{19}
+\contentsline {section}{\numberline {4}Fase di boot}{21}
+\contentsline {subsection}{\numberline {4.1}Peer}{21}
+\contentsline {subsubsection}{\numberline {4.1.1}Join al server di bootstrap}{21}
+\contentsline {subsubsection}{\numberline {4.1.2}Join udp al superpeer}{22}
+\contentsline {subsection}{\numberline {4.2}Superpeer}{25}
+\contentsline {subsubsection}{\numberline {4.2.1}Register del superpeer al server di bootstrap}{25}
+\contentsline {subsubsection}{\numberline {4.2.2}Entrata del superpeer nella rete d'overlay}{26}
+\contentsline {section}{\numberline {5}Fase di lookup}{28}
+\contentsline {subsection}{\numberline {5.1}Introduzione}{28}
+\contentsline {subsection}{\numberline {5.2}Ricerca}{28}
+\contentsline {subsubsection}{\numberline {5.2.1}Richiesta da parte del peer al superpeer}{29}
+\contentsline {subsubsection}{\numberline {5.2.2}Ricerca dei peer possessori del file da parte del superpeer}{30}
+\contentsline {subsubsection}{\numberline {5.2.3}Fine ricerca}{34}
+\contentsline {section}{\numberline {6}Fase di Download}{35}
+\contentsline {subsection}{\numberline {6.1}Descrizione}{35}
+\contentsline {subsection}{\numberline {6.2}Struttura}{35}
+\contentsline {subsection}{\numberline {6.3}Esempio di esecuzione}{36}
+\contentsline {section}{\numberline {7}Esempi di funzionamento e limitazioni riscontrate}{38}
+\contentsline {subsection}{\numberline {7.1}Test download}{38}
+\contentsline {subsubsection}{\numberline {7.1.1}Output del test}{38}
+\contentsline {subsubsection}{\numberline {7.1.2}Commento}{40}
+\contentsline {subsection}{\numberline {7.2}Test switch peer-superpeer}{41}
+\contentsline {subsubsection}{\numberline {7.2.1}output del test}{41}
+\contentsline {subsubsection}{\numberline {7.2.2}Commento}{43}
+\contentsline {subsection}{\numberline {7.3}Test ricerca}{43}
+\contentsline {subsubsection}{\numberline {7.3.1}output del test}{43}
+\contentsline {subsubsection}{\numberline {7.3.2}commento}{44}
+\contentsline {subsection}{\numberline {7.4}Limitazioni riscontrate}{45}
